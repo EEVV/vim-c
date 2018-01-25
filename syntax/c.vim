@@ -32,7 +32,7 @@ syntax match cIdentifier "\v[a-z][a-zA-Z0-9_]*"
 syntax match cFunction "\v[a-z][a-zA-Z0-9_]*(\()@="
 
 " comments
-syntax match cComment "\v\\\\.*$"
+syntax match cComment "\v//.*$"
 
 " operators
 syntax match cOperator "+"
