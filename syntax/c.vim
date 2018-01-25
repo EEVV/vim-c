@@ -31,9 +31,6 @@ syntax match cIdentifier "\v[a-z][a-zA-Z0-9_]*"
 " functions
 syntax match cFunction "\v[a-z][a-zA-Z0-9_]*(\()@="
 
-" comments
-syntax match cComment "\v//.*$"
-
 " operators
 syntax match cOperator "+"
 syntax match cOperator "-"
@@ -45,6 +42,9 @@ syntax match cOperator "|"
 syntax match cOperator "<"
 syntax match cOperator ">"
 syntax match cOperator "="
+
+" comments
+syntax match cComment "\v//.*$"
 
 " constants / literals
 syntax match cConstant "\v[0-9]+|TRUE|FALSE"
