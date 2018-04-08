@@ -7,7 +7,7 @@ syntax match cPreProc "\v#.*$"
 
 " keywords
 syntax keyword cStructure struct enum
-syntax keyword cKeyword continue break return
+syntax keyword cKeyword continue break return typedef
 syntax keyword cConditional if else switch
 syntax keyword cRepeat while for
 
@@ -23,7 +23,7 @@ syntax keyword cType size_t
 syntax keyword cType BOOL
 
 " my types
-syntax match cType "\v[A-Z][a-zA-Z0-9]*"
+syntax match cType "\v[A-Z][a-zA-Z0-9_]*"
 
 " identifiers
 syntax match cIdentifier "\v[a-z][a-zA-Z0-9_]*"
